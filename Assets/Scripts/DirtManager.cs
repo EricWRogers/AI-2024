@@ -28,20 +28,24 @@ public class DirtManager : MonoBehaviour
     public TMP_Text text;
     public GameObject dirtPrefab;
     public int spawnCount = 100;
-    public XBST xBST;
+    public XBS xBS;
 
     public void BuildBinarySearch()
     {
-        xBST.pool.Clear();
+        xBS.pool.Clear();
+
         for (int i = 0; i < transform.childCount; i++)
         {
-            xBST.Add(transform.GetChild(i));
+            xBS.Add(transform.GetChild(i));
         }
     }
 
     public void Update()
     {
-        text.text = "Dirt: " + xBST.Count();
+        if ((spawnCount - xBS.Count()) == 0)
+            text.text = "Dirt Collected: 100%";
+        else
+            text.text = "Dirt Collected: " + (int)(((spawnCount - xBS.Count() + 0.0f) / spawnCount) * 100) + "%";
     }
 
     public void Spawn()
@@ -53,18 +57,18 @@ public class DirtManager : MonoBehaviour
 
         for (int i = 0; i < spawnCount; i++)
         {
-            Vector3 randomScreenSpacePoint = new Vector3(
+            Vector3 randomPoint = new Vector3(
                 Random.Range(0.0f, 1.0f),
                 Random.Range(0.0f, 1.0f),
                 0.0f
             );
 
-            Vector3 worldPoint = Camera.main.ViewportToWorldPoint(randomScreenSpacePoint);
-            worldPoint.z = 0.0f;
+            randomPoint *= 9.0f;
+            randomPoint = randomPoint - new Vector3(4.5f, 4.5f, 0.0f);
 
             GameObject dirt = Instantiate(dirtPrefab);
             dirt.transform.parent = transform;
-            dirt.transform.position = worldPoint;
+            dirt.transform.position = randomPoint;
         }
     }
 
@@ -72,7 +76,7 @@ public class DirtManager : MonoBehaviour
     {
         List<Transform> dirtInRange = new List<Transform>();
 
-        dirtInRange = xBST.FindDirtInCircle(_position, _radius);
+        dirtInRange = xBS.FindDirtInCircle(_position, _radius);
         
         return dirtInRange;
     }
@@ -81,7 +85,7 @@ public class DirtManager : MonoBehaviour
     {
         for (int dp = 0; dp < _dirtPile.Count; dp++)
         {
-            xBST.Remove(_dirtPile[dp]);
+            xBS.Remove(_dirtPile[dp]);
             Destroy(_dirtPile[dp].gameObject);
         }
     }
