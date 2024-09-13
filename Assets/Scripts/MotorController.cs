@@ -10,14 +10,14 @@ public class MotorController : MonoBehaviour
     public float distanceTraveled;
     public bool turning = false;
     public UnityEvent finishedTurning;
-    private Rigidbody2D rigidbody2D;
+    private Rigidbody2D rb2d;
     private Vector3 lastPos;
     private bool goForward = false;
     private float targetRotation = 0;
     
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>();
 
         lastPos = transform.position;
         targetRotation = transform.eulerAngles.z;
@@ -25,37 +25,33 @@ public class MotorController : MonoBehaviour
 
     void FixedUpdate()
     {
-        turning = (targetRotation != transform.eulerAngles.z);
+        float angleDifference = Mathf.DeltaAngle(transform.eulerAngles.z, targetRotation);
+        turning = Mathf.Abs(angleDifference) > 0.01f;
 
         if (turning)
         {
-            if (targetRotation < transform.eulerAngles.z)
-            {
-                transform.Rotate(0.0f, 0.0f, -turningSpeed * Time.fixedDeltaTime);
+            float newAngle = Mathf.MoveTowardsAngle(
+                transform.eulerAngles.z,
+                targetRotation,
+                turningSpeed * Time.deltaTime
+            );
 
-                if (targetRotation > transform.eulerAngles.z)
-                {
-                    transform.eulerAngles = new Vector3(
-                        transform.eulerAngles.x,
-                        transform.eulerAngles.y,
-                        targetRotation
-                    );
-                    finishedTurning.Invoke();
-                }
-            }
-            else
-            {
-                transform.Rotate(0.0f, 0.0f, turningSpeed * Time.fixedDeltaTime);
+            transform.eulerAngles = new Vector3(
+                transform.eulerAngles.x,
+                transform.eulerAngles.y,
+                newAngle
+            );
 
-                if (targetRotation < transform.eulerAngles.z)
-                {
-                    transform.eulerAngles = new Vector3(
-                        transform.eulerAngles.x,
-                        transform.eulerAngles.y,
-                        targetRotation
-                    );
-                    finishedTurning.Invoke();
-                }
+            if (Mathf.Approximately(newAngle, targetRotation))
+            {
+                transform.eulerAngles = new Vector3(
+                    transform.eulerAngles.x,
+                    transform.eulerAngles.y,
+                    targetRotation
+                );
+                
+                turning = false;
+                finishedTurning.Invoke();
             }
         }
 
@@ -72,7 +68,7 @@ public class MotorController : MonoBehaviour
 
             lastPos = transform.position;
             
-            rigidbody2D.MovePosition(transform.position + (transform.right * speed * Time.fixedDeltaTime));
+            rb2d.MovePosition(transform.position + (transform.right * speed * Time.fixedDeltaTime));
 
             goForward = false;
         }
@@ -85,6 +81,10 @@ public class MotorController : MonoBehaviour
 
     public void Turn(float _dergree)
     {
+        if (turning)
+            return;
+        
+        goForward = false;
         targetRotation += _dergree;
     }
 }

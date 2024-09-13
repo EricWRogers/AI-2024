@@ -24,4 +24,9 @@ public class VacuumCPU : MonoBehaviour
 
         dirtManager.RemoveDirt(dirtPile);
     }
+
+    public void Bump()
+    {
+        motorController.Turn(Random.Range(100.0f, 170.0f));
+    }
 }

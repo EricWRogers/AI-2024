@@ -12,7 +12,7 @@ public class Bumper : MonoBehaviour
 
     void FixedUpdate()
     {
-        RaycastHit2D[] hits = Physics2D.CircleCastAll(bumperSprite.position, 0.5f, transform.right, 0.5f, ~mask, -Mathf.Infinity, Mathf.Infinity);
+        RaycastHit2D[] hits = Physics2D.CircleCastAll(bumperSprite.position, 0.5f, transform.right, 0.0f, ~mask, -Mathf.Infinity, Mathf.Infinity);
 
         if (hittingObject == false && hits.Length > 0)
             hit.Invoke();
