@@ -27,6 +27,6 @@ public class VacuumCPU : MonoBehaviour
 
     public void Bump()
     {
-        motorController.Turn(Random.Range(100.0f, 170.0f));
+        motorController.Turn(Random.Range(85.0f, 95.0f));
     }
 }

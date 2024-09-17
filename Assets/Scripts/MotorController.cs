@@ -9,6 +9,7 @@ public class MotorController : MonoBehaviour
     public float turningSpeed = 5.0f;
     public float distanceTraveled;
     public bool turning = false;
+    public float onBumpReverseDistance = 0.2f;
     public UnityEvent finishedTurning;
     private Rigidbody2D rb2d;
     private Vector3 lastPos;
@@ -25,51 +26,33 @@ public class MotorController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float angleDifference = Mathf.DeltaAngle(transform.eulerAngles.z, targetRotation);
-        turning = Mathf.Abs(angleDifference) > 0.01f;
-
         if (turning)
         {
-            float newAngle = Mathf.MoveTowardsAngle(
-                transform.eulerAngles.z,
-                targetRotation,
-                turningSpeed * Time.deltaTime
+            Quaternion targetRotationQuaternion = Quaternion.Euler(0, 0, targetRotation);
+            transform.rotation = Quaternion.RotateTowards(
+                transform.rotation,
+                targetRotationQuaternion,
+                turningSpeed * Time.fixedDeltaTime
             );
 
-            transform.eulerAngles = new Vector3(
-                transform.eulerAngles.x,
-                transform.eulerAngles.y,
-                newAngle
-            );
-
-            if (Mathf.Approximately(newAngle, targetRotation))
+            if (Mathf.Abs(Quaternion.Angle(transform.rotation, targetRotationQuaternion)) < 0.1f)
             {
-                transform.eulerAngles = new Vector3(
-                    transform.eulerAngles.x,
-                    transform.eulerAngles.y,
-                    targetRotation
-                );
-                
+                transform.rotation = targetRotationQuaternion;
                 turning = false;
                 finishedTurning.Invoke();
+                return;
             }
-        }
-
-        if (goForward && turning)
-        {
-            GameObject.FindWithTag("HUD").GetComponent<HUD>().MotorBroke();
             return;
         }
 
-        if (goForward)
+        if (goForward && !turning)
         {
             if (lastPos != transform.position)
-            distanceTraveled += Vector3.Distance(lastPos, transform.position);
+                distanceTraveled += Vector3.Distance(lastPos, transform.position);
 
             lastPos = transform.position;
-            
-            rb2d.MovePosition(transform.position + (transform.right * speed * Time.fixedDeltaTime));
 
+            rb2d.MovePosition(transform.position + (transform.right * speed * Time.fixedDeltaTime));
             goForward = false;
         }
     }
@@ -79,12 +62,21 @@ public class MotorController : MonoBehaviour
         goForward = true;
     }
 
-    public void Turn(float _dergree)
+    public void Turn(float _degree)
     {
         if (turning)
             return;
         
+        turning = true;
         goForward = false;
-        targetRotation += _dergree;
+        
+        targetRotation = (targetRotation + _degree) % 360;
+        if (targetRotation < 0)
+            targetRotation += 360;
+    }
+
+    public void OnBump()
+    {
+        transform.position = transform.position + (-transform.right * onBumpReverseDistance);
     }
 }
