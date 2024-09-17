@@ -20,6 +20,11 @@ public class DirtManagerEditor : Editor
             Debug.Log("Building Binary Search");
             dirtManager.BuildBinarySearch();
         }
+
+        if (GUILayout.Button("CleanXBS"))
+        {
+            dirtManager.CleanXBS();
+        }
     }
 }
 
@@ -38,6 +43,23 @@ public class DirtManager : MonoBehaviour
         {
             xBS.Add(transform.GetChild(i));
         }
+    }
+
+    public void CleanXBS()
+    {
+        for(int i = 0; i < xBS.pool.Count;)
+        {
+            if (xBS.pool[i] == null)
+            {
+                xBS.pool.RemoveAt(i);
+            }
+            else
+            {
+                i++;
+            }
+        }
+
+        spawnCount = xBS.pool.Count;
     }
 
     public void Update()

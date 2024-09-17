@@ -10,8 +10,6 @@ public class VacuumCPU : MonoBehaviour
     void Start()
     {
         motorController = GetComponent<MotorController>();
-
-        motorController.Turn(90.0f);
     }
 
     // Update is called once per frame
