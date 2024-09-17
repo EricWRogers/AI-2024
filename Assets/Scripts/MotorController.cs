@@ -21,7 +21,7 @@ public class MotorController : MonoBehaviour
         lastPos = transform.position;
         targetRotation = transform.eulerAngles.z;
     }
-    
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -31,8 +31,6 @@ public class MotorController : MonoBehaviour
     {
         if (turning)
         {
-            Debug.Log("Turn: " + transform.parent.name);
-
             Quaternion targetRotationQuaternion = Quaternion.Euler(0, 0, targetRotation);
             transform.rotation = Quaternion.RotateTowards(
                 transform.rotation,
@@ -69,12 +67,8 @@ public class MotorController : MonoBehaviour
 
     public void Turn(float _degree)
     {
-        Debug.Log("Turn: " + transform.parent.name);
-
         if (turning)
             return;
-        
-        Debug.Log("Turn: " + transform.parent.name);
         
         turning = true;
         goForward = false;
