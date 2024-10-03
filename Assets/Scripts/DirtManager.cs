@@ -33,41 +33,37 @@ public class DirtManager : MonoBehaviour
     public TMP_Text text;
     public GameObject dirtPrefab;
     public int spawnCount = 100;
-    public XBS xBS;
+    public QuadTree quadTree;
+    public int width = 2000;
+    public int height = 2000;
 
+    public void Awake()
+    {
+        BuildBinarySearch();
+    }
     public void BuildBinarySearch()
     {
-        xBS.pool.Clear();
+        quadTree = new QuadTree((Vector2)transform.position, width, height);
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            xBS.Add(transform.GetChild(i));
+            quadTree.Add(transform.GetChild(i).gameObject);
         }
     }
 
     public void CleanXBS()
     {
-        for(int i = 0; i < xBS.pool.Count;)
-        {
-            if (xBS.pool[i] == null)
-            {
-                xBS.pool.RemoveAt(i);
-            }
-            else
-            {
-                i++;
-            }
-        }
+        quadTree = new QuadTree((Vector2)transform.position, width, height);
 
-        spawnCount = xBS.pool.Count;
+        spawnCount = quadTree.Count();
     }
 
     public void Update()
     {
-        if ((spawnCount - xBS.Count()) == 0)
+        if ((spawnCount - quadTree.Count()) == 0)
             text.text = "Dirt Collected: 100%";
         else
-            text.text = "Dirt Collected: " + (int)(((spawnCount - xBS.Count() + 0.0f) / spawnCount) * 100) + "%";
+            text.text = "Dirt Collected: " + (int)(((spawnCount - quadTree.Count() + 0.0f) / spawnCount) * 100) + "%";
     }
 
     public void Spawn()
@@ -94,21 +90,21 @@ public class DirtManager : MonoBehaviour
         }
     }
 
-    public List<Transform> FindDirtInCircle(Vector3 _position, float _radius)
+    public List<GameObject> FindDirtInCircle(Vector3 _position, float _radius)
     {
-        List<Transform> dirtInRange = new List<Transform>();
+        List<GameObject> dirtInRange = new List<GameObject>();
 
-        dirtInRange = xBS.FindDirtInCircle(_position, _radius);
+        dirtInRange = quadTree.Find(_position, _radius);
         
         return dirtInRange;
     }
 
-    public void RemoveDirt(List<Transform> _dirtPile)
+    public void RemoveDirt(List<GameObject> _dirtPile)
     {
         for (int dp = 0; dp < _dirtPile.Count; dp++)
         {
-            xBS.Remove(_dirtPile[dp]);
-            Destroy(_dirtPile[dp].gameObject);
+            quadTree.Remove(_dirtPile[dp]);
+            Destroy(_dirtPile[dp]);
         }
     }
 }

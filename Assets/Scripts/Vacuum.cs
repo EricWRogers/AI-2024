@@ -22,7 +22,7 @@ public class Vacuum : MonoBehaviour
 
         rb2d.MovePosition(transform.position + (direction * speed * Time.fixedDeltaTime));
 
-        List<Transform> dirtPile = dirtManager.FindDirtInCircle(transform.position, transform.localScale.x/2.0f);
+        List<GameObject> dirtPile = dirtManager.FindDirtInCircle(transform.position, transform.localScale.x/2.0f);
 
         dirtManager.RemoveDirt(dirtPile);
     }

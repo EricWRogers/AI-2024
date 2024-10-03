@@ -18,7 +18,7 @@ public class VacuumCPU : MonoBehaviour
         if (motorController.turning == false)
             motorController.Forward();
 
-        List<Transform> dirtPile = dirtManager.FindDirtInCircle(transform.position, transform.localScale.x/2.0f);
+        List<GameObject> dirtPile = dirtManager.FindDirtInCircle(transform.position, transform.localScale.x/2.0f);
 
         dirtManager.RemoveDirt(dirtPile);
     }
