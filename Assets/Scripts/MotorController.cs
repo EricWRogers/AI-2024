@@ -15,6 +15,8 @@ public class MotorController : MonoBehaviour
     private Vector3 lastPos;
     private bool goForward = false;
     public float targetRotation = 0;
+    public Battery battery;
+    public float wattsPerSeconds = 1.0f;
     
     void Awake()
     {
@@ -29,8 +31,18 @@ public class MotorController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (battery)
+        {
+            if (battery.powerLevel == 0.0f)
+                return;
+        }
+        
         if (turning)
         {
+            if (battery)
+            {
+                battery.UseBattery(wattsPerSeconds*Time.fixedDeltaTime);
+            }
             Quaternion targetRotationQuaternion = Quaternion.Euler(0, 0, targetRotation);
             transform.rotation = Quaternion.RotateTowards(
                 transform.rotation,
@@ -50,6 +62,11 @@ public class MotorController : MonoBehaviour
 
         if (goForward && !turning)
         {
+            if (battery)
+            {
+                battery.UseBattery(wattsPerSeconds*Time.fixedDeltaTime);
+            }
+
             if (lastPos != transform.position)
                 distanceTraveled += Vector3.Distance(lastPos, transform.position);
 
