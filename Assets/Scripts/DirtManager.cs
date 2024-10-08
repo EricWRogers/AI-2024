@@ -23,7 +23,7 @@ public class DirtManagerEditor : Editor
 
         if (GUILayout.Button("CleanXBS"))
         {
-            dirtManager.CleanXBS();
+            dirtManager.BuildBinarySearch();
         }
     }
 }
@@ -41,6 +41,7 @@ public class DirtManager : MonoBehaviour
     {
         BuildBinarySearch();
     }
+
     public void BuildBinarySearch()
     {
         quadTree = new QuadTree((Vector2)transform.position, width, height);

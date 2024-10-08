@@ -24,6 +24,7 @@ public class Battery : MonoBehaviour
     public float powerLevel = 1.0f;
     public float lowPowerLevel = 0.2f;
     public bool lowPower = false;
+    public bool charging = false;
     public UnityEvent enteredLowPowerMode;
     public UnityEvent fullyCharged;
 
@@ -47,6 +48,24 @@ public class Battery : MonoBehaviour
 
         return powerLevel > 0.0f;
     }
+
+    public void ChargeBattery(float _amount)
+    {
+        if (powerLevel >= 1.0f)
+            return;
+        
+        float beforeCharge = watts;
+
+        watts += _amount;
+
+        watts = (watts > maxWatts) ? maxWatts : watts;
+
+        powerLevel = (watts <= 0.0f) ? 0.0f : watts/maxWatts;
+
+        if (powerLevel >= 1.0f)
+            FullCharge();
+    }
+
     public void FullCharge()
     {
         watts = maxWatts;
