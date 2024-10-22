@@ -6,9 +6,12 @@ using UnityEngine.TextCore;
 
 public class BoidManager : MonoBehaviour
 {
+    public Transform bomb;
     public float maxAlignmentDistance = 3.0f;
     public float maxCohesionDistance = 2.0f;
     public float maxSeparationDistance = 0.5f;
+    public float maxBombDistance = 1.0f;
+    public float fleeWeight = 1.0f;
     public float targetWeight = 0.35f;
     public float separationWeight = 1.0f;
     public float alignmentWeight = 0.4f;
@@ -34,7 +37,9 @@ public class BoidManager : MonoBehaviour
         foreach(Boid boid in boids)
         {
             Vector2 pos = new Vector2(boid.transform.position.x, boid.transform.position.y);
+            Vector2 bombPos = new Vector2(bomb.transform.position.x, bomb.transform.position.y);
 
+            Vector2 fleeDirection = Flee(pos, bombPos);
             Vector2 seekDirection = Seek(pos, targetPos);
             Vector2 separationDirection = Separation(boid, pos);
             Vector2 alignmentDirection = Alignment(boid, pos);
@@ -43,7 +48,8 @@ public class BoidManager : MonoBehaviour
             boid.acceleration = (seekDirection * targetWeight) +
                                 (separationDirection * separationWeight) + 
                                 (alignmentDirection * alignmentWeight) +
-                                (cohesionDirection * cohesionWeight);
+                                (cohesionDirection * cohesionWeight) + 
+                                (fleeDirection * fleeWeight);
 
             boid.velocity += boid.acceleration * speed * Time.deltaTime;
 
@@ -64,6 +70,18 @@ public class BoidManager : MonoBehaviour
 
             boid.transform.position = new Vector3(pos.x, pos.y, boid.transform.position.z);
         }
+    }
+
+    Vector2 Flee(Vector2 _agentPos, Vector2 _dontTouch)
+    {
+        float distance = Vector2.Distance(_agentPos, _dontTouch);
+        if (distance < maxBombDistance)
+        {
+            Vector2 seek = _agentPos - _dontTouch;
+            return seek.normalized;
+        }
+        
+        return Vector2.zero;
     }
 
     Vector2 Seek(Vector2 _agentPos, Vector2 _targetPos)
@@ -134,7 +152,32 @@ public class BoidManager : MonoBehaviour
         Vector2 cohesion = Vector2.zero;
         int numberOfNeighbors = 0;
 
-        
+        Boid[] boids = GetComponentsInChildren<Boid>();
+
+        foreach (Boid neighborBoid in boids)
+        {
+            Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+            float distance = Vector2.Distance(_agentPos, neighborPos);
+
+            if (distance < maxCohesionDistance)
+            {
+                cohesion += neighborPos;
+                numberOfNeighbors++;
+            }
+        }
+
+        if (numberOfNeighbors > 0)
+        {
+            // gets the average neighbor pos
+            cohesion /= (float)numberOfNeighbors;
+
+            cohesion -= _agentPos;
+
+            if (cohesion != Vector2.zero)
+            {
+                return cohesion.normalized;
+            }
+        }
 
         return Vector2.zero;
     }
