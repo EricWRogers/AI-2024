@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Unity.VisualScripting.Dependencies.Sqlite;
 using UnityEngine;
+using UnityEngine.TextCore;
 
 public class BoidManager : MonoBehaviour
 {
@@ -37,9 +37,13 @@ public class BoidManager : MonoBehaviour
 
             Vector2 seekDirection = Seek(pos, targetPos);
             Vector2 separationDirection = Separation(boid, pos);
+            Vector2 alignmentDirection = Alignment(boid, pos);
+            Vector2 cohesionDirection = Cohesion (boid, pos);
 
             boid.acceleration = (seekDirection * targetWeight) +
-                                (separationDirection * separationWeight);
+                                (separationDirection * separationWeight) + 
+                                (alignmentDirection * alignmentWeight) +
+                                (cohesionDirection * cohesionWeight);
 
             boid.velocity += boid.acceleration * speed * Time.deltaTime;
 
@@ -71,7 +75,6 @@ public class BoidManager : MonoBehaviour
     Vector2 Separation(Boid _boid, Vector2 _agentPos)
     {
         Vector2 separation = Vector2.zero;
-        int numberOfNeighbors = transform.childCount;
 
         Boid[] boids = GetComponentsInChildren<Boid>();
 
@@ -83,7 +86,7 @@ public class BoidManager : MonoBehaviour
                 float distance = Vector2.Distance(_agentPos, neighborPos);
                 if (distance < maxSeparationDistance)
                 {
-                    // separation += (_agentPos - neighborPos).normalized * (maxSeparationDistance - distance);
+                    // this give a linear falloff to the separation effects
                     separation += (_agentPos - neighborPos).normalized * (maxSeparationDistance - distance);
                 }
             }
@@ -95,5 +98,44 @@ public class BoidManager : MonoBehaviour
         }
 
         return separation;
+    }
+
+    Vector2 Alignment(Boid _boid, Vector2 _agentPos)
+    {
+        Vector2 alignment = Vector2.zero;
+        int numberOfNeighbors = 0;
+
+        Boid[] boids = GetComponentsInChildren<Boid>();
+
+        foreach(Boid neighborBoid in boids)
+        {
+            if (_boid.gameObject != neighborBoid.gameObject)
+            {
+                Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+                float distance = Vector2.Distance(_agentPos, neighborPos);
+                if (distance < maxAlignmentDistance)
+                {
+                    numberOfNeighbors++;
+                    alignment += neighborBoid.velocity;
+                }
+            }
+        }
+
+        if (numberOfNeighbors > 0)
+        {
+            return (alignment / (float)numberOfNeighbors).normalized;
+        }
+
+        return Vector2.zero;
+    }
+
+    Vector2 Cohesion(Boid _boid, Vector2 _agentPos)
+    {
+        Vector2 cohesion = Vector2.zero;
+        int numberOfNeighbors = 0;
+
+        
+
+        return Vector2.zero;
     }
 }
