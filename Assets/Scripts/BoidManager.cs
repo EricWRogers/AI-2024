@@ -6,7 +6,7 @@ using UnityEngine.TextCore;
 
 public class BoidManager : MonoBehaviour
 {
-    public Transform bomb;
+    public List<Transform> bombs;
     public float maxAlignmentDistance = 3.0f;
     public float maxCohesionDistance = 2.0f;
     public float maxSeparationDistance = 0.5f;
@@ -37,9 +37,8 @@ public class BoidManager : MonoBehaviour
         foreach(Boid boid in boids)
         {
             Vector2 pos = new Vector2(boid.transform.position.x, boid.transform.position.y);
-            Vector2 bombPos = new Vector2(bomb.transform.position.x, bomb.transform.position.y);
 
-            Vector2 fleeDirection = Flee(pos, bombPos);
+            Vector2 fleeDirection = Flee(pos);
             Vector2 seekDirection = Seek(pos, targetPos);
             Vector2 separationDirection = Separation(boid, pos);
             Vector2 alignmentDirection = Alignment(boid, pos);
@@ -72,16 +71,25 @@ public class BoidManager : MonoBehaviour
         }
     }
 
-    Vector2 Flee(Vector2 _agentPos, Vector2 _dontTouch)
+    Vector2 Flee(Vector2 _agentPos)
     {
-        float distance = Vector2.Distance(_agentPos, _dontTouch);
-        if (distance < maxBombDistance)
+        Vector2 flee = Vector2.zero;
+
+        foreach(Transform bomb in bombs)
         {
-            Vector2 seek = _agentPos - _dontTouch;
-            return seek.normalized;
+            Vector2 bombPos = new Vector2(bomb.position.x, bomb.position.y);
+            float distance = Vector2.Distance(_agentPos, bombPos);
+            if (distance < maxBombDistance)
+            {
+                Vector2 direction = _agentPos - bombPos;
+                flee += direction;
+            }
         }
+
+        if (flee != Vector2.zero)
+            flee = flee.normalized;
         
-        return Vector2.zero;
+        return flee;
     }
 
     Vector2 Seek(Vector2 _agentPos, Vector2 _targetPos)
