@@ -6,7 +6,7 @@ using UnityEngine.TextCore;
 
 public class BoidManager : MonoBehaviour
 {
-    public List<Transform> bombs;
+    public List<Transform> rocks;
     public float maxAlignmentDistance = 3.0f;
     public float maxCohesionDistance = 2.0f;
     public float maxSeparationDistance = 0.5f;
@@ -23,7 +23,13 @@ public class BoidManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject[] gos = GameObject.FindGameObjectsWithTag("ROCK");
+        rocks.Clear();
+
+        foreach(GameObject go in gos)
+        {
+            rocks.Add(go.transform);
+        }
     }
 
     // Update is called once per frame
@@ -75,7 +81,7 @@ public class BoidManager : MonoBehaviour
     {
         Vector2 flee = Vector2.zero;
 
-        foreach(Transform bomb in bombs)
+        foreach(Transform bomb in rocks)
         {
             Vector2 bombPos = new Vector2(bomb.position.x, bomb.position.y);
             float distance = Vector2.Distance(_agentPos, bombPos);
