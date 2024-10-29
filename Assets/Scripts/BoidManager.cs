@@ -1,8 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.TextCore;
+
+// 24fps ~ 200 boids
+// 29fps ~ 200 boids
+// 80fps ~ 200 boids oop quadtree
+// 30fps ~ 400 boids
 
 public class BoidManager : MonoBehaviour
 {
@@ -19,6 +26,9 @@ public class BoidManager : MonoBehaviour
     public float drag = 0.95f;
     public float speed = 1.0f;
     public float maxSpeed = 3.0f;
+
+    private Boid[] boids;
+    private Boid[] neighborBoids;
     
     // Start is called before the first frame update
     void Start()
@@ -38,42 +48,66 @@ public class BoidManager : MonoBehaviour
         Vector2 mousePos = Input.mousePosition;
         Vector2 targetPos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        Boid[] boids = GetComponentsInChildren<Boid>();
+        boids = GetComponentsInChildren<Boid>();
+
+        QuadTree quadTree= new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
 
         foreach(Boid boid in boids)
         {
-            Vector2 pos = new Vector2(boid.transform.position.x, boid.transform.position.y);
+            quadTree.Add(boid.gameObject);
+        }
 
-            Vector2 fleeDirection = Flee(pos);
-            Vector2 seekDirection = Seek(pos, targetPos);
-            Vector2 separationDirection = Separation(boid, pos);
-            Vector2 alignmentDirection = Alignment(boid, pos);
-            Vector2 cohesionDirection = Cohesion (boid, pos);
+        Vector2 pos;
 
-            boid.acceleration = (seekDirection * targetWeight) +
+        Vector2 fleeDirection;
+        Vector2 seekDirection;
+        Vector2 separationDirection;
+        Vector2 alignmentDirection;
+        Vector2 cohesionDirection;
+
+        for (int i = 0; i < boids.Count(); i++)
+        {
+            pos = new Vector2(boids[i].transform.position.x, boids[i].transform.position.y);
+
+            List<GameObject> boidGO = quadTree.Find(pos, maxAlignmentDistance);
+
+            neighborBoids = new Boid[boidGO.Count()];
+
+            for (int j = 0; j < boidGO.Count(); j++)
+            {
+                neighborBoids[j] = boidGO[j].GetComponent<Boid>();
+            }
+
+            fleeDirection = Flee(pos);
+            seekDirection = Seek(pos, targetPos);
+            separationDirection = Separation(boids[i], pos);
+            alignmentDirection = Alignment(boids[i], pos);
+            cohesionDirection = Cohesion (boids[i], pos);
+
+            boids[i].acceleration = (seekDirection * targetWeight) +
                                 (separationDirection * separationWeight) + 
                                 (alignmentDirection * alignmentWeight) +
                                 (cohesionDirection * cohesionWeight) + 
                                 (fleeDirection * fleeWeight);
 
-            boid.velocity += boid.acceleration * speed * Time.deltaTime;
+            boids[i].velocity += boids[i].acceleration * speed * Time.deltaTime;
 
             // make the boid look the direction it is going
-            boid.transform.right = new Vector3(boid.velocity.x, boid.velocity.y, 0.0f).normalized;
+            boids[i].transform.right = new Vector3(boids[i].velocity.x, boids[i].velocity.y, 0.0f).normalized;
 
             // handle max speed
-            boid.speed = boid.velocity.magnitude;
+            boids[i].speed = boids[i].velocity.magnitude;
 
-            if (boid.speed > maxSpeed)
+            if (boids[i].speed > maxSpeed)
             {
-                boid.velocity = boid.velocity.normalized * maxSpeed;
+                boids[i].velocity = boids[i].velocity.normalized * maxSpeed;
             }
 
-            boid.velocity *= drag;
+            boids[i].velocity *= drag;
 
-            pos += boid.velocity;
+            pos += boids[i].velocity;
 
-            boid.transform.position = new Vector3(pos.x, pos.y, boid.transform.position.z);
+            boids[i].transform.position = new Vector3(pos.x, pos.y, boids[i].transform.position.z);
         }
     }
 
@@ -108,9 +142,7 @@ public class BoidManager : MonoBehaviour
     {
         Vector2 separation = Vector2.zero;
 
-        Boid[] boids = GetComponentsInChildren<Boid>();
-
-        foreach(Boid neighborBoid in boids)
+        foreach(Boid neighborBoid in neighborBoids)
         {
             if (_boid.gameObject != neighborBoid.gameObject)
             {
@@ -137,9 +169,7 @@ public class BoidManager : MonoBehaviour
         Vector2 alignment = Vector2.zero;
         int numberOfNeighbors = 0;
 
-        Boid[] boids = GetComponentsInChildren<Boid>();
-
-        foreach(Boid neighborBoid in boids)
+        foreach(Boid neighborBoid in neighborBoids)
         {
             if (_boid.gameObject != neighborBoid.gameObject)
             {
@@ -166,9 +196,7 @@ public class BoidManager : MonoBehaviour
         Vector2 cohesion = Vector2.zero;
         int numberOfNeighbors = 0;
 
-        Boid[] boids = GetComponentsInChildren<Boid>();
-
-        foreach (Boid neighborBoid in boids)
+        foreach (Boid neighborBoid in neighborBoids)
         {
             Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
             float distance = Vector2.Distance(_agentPos, neighborPos);
