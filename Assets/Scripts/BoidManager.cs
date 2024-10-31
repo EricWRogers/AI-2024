@@ -29,13 +29,13 @@ public class BoidManager : MonoBehaviour
     private Boid[] boids;
     private List<Boid> neighborBoids = new List<Boid>();
     QuadTree rockTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
-    
+
     // Start is called before the first frame update
     void Start()
     {
         GameObject[] gos = GameObject.FindGameObjectsWithTag("ROCK");
 
-        foreach(GameObject go in gos)
+        foreach (GameObject go in gos)
         {
             rockTree.Add(go);
         }
@@ -51,7 +51,7 @@ public class BoidManager : MonoBehaviour
 
         QuadTree quadTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
 
-        foreach(Boid boid in boids)
+        foreach (Boid boid in boids)
         {
             quadTree.Add(boid.gameObject);
         }
@@ -80,29 +80,29 @@ public class BoidManager : MonoBehaviour
             alignmentDirection = Vector2.zero;
             cohesionDirection = Vector2.zero;
 
-            foreach(Boid neighborBoid in neighborBoids)
+            foreach (Boid neighborBoid in neighborBoids)
             {
                 if (boids[i].gameObject != neighborBoid.gameObject)
                 {
                     Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
                     float distance = Vector2.Distance(pos, neighborPos);
 
-                    if (distance < maxSeparationDistance)
-                    {
-                        // this give a linear falloff to the separation effects
-                        separationDirection += (pos - neighborPos).normalized * (maxSeparationDistance - distance);
-                    }
-
                     if (distance < maxAlignmentDistance)
                     {
                         alignmentNON++;
                         alignmentDirection += neighborBoid.velocity;
-                    }
 
-                    if (distance < maxCohesionDistance)
-                    {
-                        cohesionDirection += neighborPos;
-                        cohesionNON++;
+                        if (distance < maxCohesionDistance)
+                        {
+                            cohesionDirection += neighborPos;
+                            cohesionNON++;
+
+                            if (distance < maxSeparationDistance)
+                            {
+                                // this give a linear falloff to the separation effects
+                                separationDirection += (pos - neighborPos).normalized * (maxSeparationDistance - distance);
+                            }
+                        }
                     }
                 }
             }
@@ -136,9 +136,9 @@ public class BoidManager : MonoBehaviour
             //cohesionDirection = Cohesion (boids[i], pos);
 
             boids[i].acceleration = (seekDirection * targetWeight) +
-                                (separationDirection * separationWeight) + 
+                                (separationDirection * separationWeight) +
                                 (alignmentDirection * alignmentWeight) +
-                                (cohesionDirection * cohesionWeight) + 
+                                (cohesionDirection * cohesionWeight) +
                                 (fleeDirection * fleeWeight);
 
             boids[i].velocity += boids[i].acceleration * speed * Time.deltaTime;
@@ -168,7 +168,7 @@ public class BoidManager : MonoBehaviour
 
         List<GameObject> rocks = rockTree.Find(_agentPos, maxBombDistance);
 
-        foreach(GameObject bomb in rocks)
+        foreach (GameObject bomb in rocks)
         {
             Vector2 bombPos = new Vector2(bomb.transform.position.x, bomb.transform.position.y);
             float distance = Vector2.Distance(_agentPos, bombPos);
@@ -181,7 +181,7 @@ public class BoidManager : MonoBehaviour
 
         if (flee != Vector2.zero)
             flee = flee.normalized;
-        
+
         return flee;
     }
 
@@ -195,7 +195,7 @@ public class BoidManager : MonoBehaviour
     {
         Vector2 separation = Vector2.zero;
 
-        foreach(Boid neighborBoid in neighborBoids)
+        foreach (Boid neighborBoid in neighborBoids)
         {
             if (_boid.gameObject != neighborBoid.gameObject)
             {
@@ -222,7 +222,7 @@ public class BoidManager : MonoBehaviour
         Vector2 alignment = Vector2.zero;
         int numberOfNeighbors = 0;
 
-        foreach(Boid neighborBoid in neighborBoids)
+        foreach (Boid neighborBoid in neighborBoids)
         {
             if (_boid.gameObject != neighborBoid.gameObject)
             {
