@@ -309,7 +309,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7769246
 Transform:
@@ -393,7 +393,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8144457
 Transform:
@@ -482,7 +482,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &13247177
 Transform:
@@ -623,7 +623,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &24208426
 Transform:
@@ -1054,7 +1054,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &37629474
 Transform:
@@ -1153,7 +1153,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &54686188
 Transform:
@@ -1237,7 +1237,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &56335846
 Transform:
@@ -1574,7 +1574,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &69343758
 Transform:
@@ -1844,7 +1844,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &83809771
 Transform:
@@ -1938,7 +1938,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &91276623
 Transform:
@@ -2265,7 +2265,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &105801835
 Transform:
@@ -2421,7 +2421,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &112728490
 Transform:
@@ -2509,7 +2509,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &117432071
 Transform:
@@ -2519,7 +2519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117432070}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6166515, y: 8.0942745, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2535,7 +2535,7 @@ Transform:
   - {fileID: 1835890247}
   - {fileID: 1379448922}
   - {fileID: 173270098}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &117875547
 PrefabInstance:
@@ -2609,7 +2609,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &118251801
 Transform:
@@ -2807,7 +2807,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &121071978
 Transform:
@@ -2901,7 +2901,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &123475313
 Transform:
@@ -3062,7 +3062,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &139991399
 Transform:
@@ -3146,7 +3146,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &142314070
 Transform:
@@ -3287,7 +3287,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &150518524
 Transform:
@@ -3738,7 +3738,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &164145049
 Transform:
@@ -3993,7 +3993,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &169811122
 SpriteRenderer:
@@ -4055,12 +4055,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169811121}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.48, y: -38.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &171021506
 GameObject:
@@ -4077,7 +4077,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &171021507
 Transform:
@@ -4218,7 +4218,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &173270098
 Transform:
@@ -4302,7 +4302,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &173293100
 Transform:
@@ -4386,7 +4386,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &173715692
 Transform:
@@ -5003,7 +5003,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &196995322
 Transform:
@@ -5092,7 +5092,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &200988344
 Transform:
@@ -5186,7 +5186,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &207072284
 Transform:
@@ -5275,7 +5275,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &213865079
 Transform:
@@ -5550,7 +5550,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &222258541
 Transform:
@@ -5768,7 +5768,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &242098430
 Transform:
@@ -5966,7 +5966,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &248060716
 Transform:
@@ -6169,7 +6169,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &255147753
 Transform:
@@ -6372,7 +6372,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &258812501
 SpriteRenderer:
@@ -6434,12 +6434,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 258812500}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.48, y: -40.210003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &262735632 stripped
 Transform:
@@ -6476,7 +6476,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &273258209
 Transform:
@@ -6751,7 +6751,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &284323055
 Transform:
@@ -6949,7 +6949,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &289578314
 Transform:
@@ -7033,7 +7033,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &290180409
 Transform:
@@ -7241,7 +7241,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &298908589
 Transform:
@@ -7439,7 +7439,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &303493647
 SpriteRenderer:
@@ -7501,12 +7501,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303493646}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.81717, y: -3.3965237, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &303608798
 GameObject:
@@ -7523,7 +7523,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &303608799
 Transform:
@@ -7607,7 +7607,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &307347000
 Transform:
@@ -7691,7 +7691,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &307802610
 Transform:
@@ -7775,7 +7775,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &311852363
 Transform:
@@ -7858,7 +7858,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &312410372
 Transform:
@@ -7884,13 +7884,74 @@ Transform:
   - {fileID: 1833626331}
   - {fileID: 2108415079}
   - {fileID: 1929931368}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!4 &314251892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3588453019426874219, guid: 7e78af916f6b8d34bac5dd394777a58e, type: 3}
   m_PrefabInstance: {fileID: 381041899}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &314851662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 314851663}
+  m_Layer: 0
+  m_Name: Rocks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &314851663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314851662}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 303493648}
+  - {fileID: 955235496}
+  - {fileID: 620498313}
+  - {fileID: 339249041}
+  - {fileID: 1631133835}
+  - {fileID: 1040850993}
+  - {fileID: 549295526}
+  - {fileID: 169811123}
+  - {fileID: 930879009}
+  - {fileID: 258812502}
+  - {fileID: 117432071}
+  - {fileID: 877176600}
+  - {fileID: 735829122}
+  - {fileID: 547083065}
+  - {fileID: 1275028362}
+  - {fileID: 1567681384}
+  - {fileID: 429451038}
+  - {fileID: 1391324896}
+  - {fileID: 312410372}
+  - {fileID: 1743998101}
+  - {fileID: 2046549582}
+  - {fileID: 705776243}
+  - {fileID: 1117211265}
+  - {fileID: 1756148155}
+  - {fileID: 1926515234}
+  - {fileID: 631858936}
+  - {fileID: 596549493}
+  - {fileID: 727177168}
+  - {fileID: 898539933}
+  - {fileID: 1988568595}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314949262
 GameObject:
   m_ObjectHideFlags: 0
@@ -7906,7 +7967,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &314949263
 SpriteRenderer:
@@ -7990,7 +8051,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &316816733
 Transform:
@@ -8074,7 +8135,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &317319143
 Transform:
@@ -8339,7 +8400,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &331461882
 Transform:
@@ -8428,7 +8489,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &332029789
 Transform:
@@ -8626,7 +8687,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &339198684
 Transform:
@@ -8710,7 +8771,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &339249040
 SpriteRenderer:
@@ -8772,12 +8833,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339249039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.1, y: 3.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &342421316 stripped
 Transform:
@@ -8923,7 +8984,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &353538819
 Transform:
@@ -9240,7 +9301,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &369062503
 Transform:
@@ -9381,7 +9442,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &369540090
 Transform:
@@ -9522,7 +9583,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &372707449
 Transform:
@@ -9792,7 +9853,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &391138947
 Transform:
@@ -9876,7 +9937,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &396035771
 Transform:
@@ -9965,7 +10026,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &402456613
 Transform:
@@ -10173,7 +10234,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &406141458
 Transform:
@@ -10467,7 +10528,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &429451038
 Transform:
@@ -10477,7 +10538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429451037}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.69, y: -5.18, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10493,7 +10554,7 @@ Transform:
   - {fileID: 499478744}
   - {fileID: 766803745}
   - {fileID: 2083781903}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &430741942
 PrefabInstance:
@@ -10825,7 +10886,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &449380506
 Transform:
@@ -11028,7 +11089,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &464705456
 Transform:
@@ -11231,7 +11292,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &466935837
 Transform:
@@ -11382,7 +11443,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &474290685
 Transform:
@@ -11590,7 +11651,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &488464156
 Transform:
@@ -11731,7 +11792,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &491333018
 Transform:
@@ -11872,7 +11933,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &492108992
 Transform:
@@ -12075,7 +12136,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &499478744
 Transform:
@@ -12216,7 +12277,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &503596242
 Transform:
@@ -12486,7 +12547,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &517832940
 Transform:
@@ -12627,7 +12688,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &522604541
 Transform:
@@ -12835,7 +12896,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &537105034
 Transform:
@@ -13260,7 +13321,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &547083065
 Transform:
@@ -13270,7 +13331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547083064}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6166515, y: -5.18, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13286,7 +13347,7 @@ Transform:
   - {fileID: 1443425168}
   - {fileID: 1681756228}
   - {fileID: 1172363673}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &548109869 stripped
 Transform:
@@ -13365,7 +13426,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &549295525
 SpriteRenderer:
@@ -13427,12 +13488,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549295524}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.48, y: -38.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &549703241
 PrefabInstance:
@@ -13578,7 +13639,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &562891325
 Transform:
@@ -14034,7 +14095,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &580198376
 Transform:
@@ -14128,7 +14189,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &581898455
 Transform:
@@ -14217,7 +14278,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &585990725
 Transform:
@@ -14415,7 +14476,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &587745285
 Transform:
@@ -14555,7 +14616,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &596549493
 Transform:
@@ -14585,7 +14646,7 @@ Transform:
   - {fileID: 694902310}
   - {fileID: 819031629}
   - {fileID: 284323055}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.326}
 --- !u!1001 &599754518
 PrefabInstance:
@@ -14659,7 +14720,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &599926972
 Transform:
@@ -14743,7 +14804,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &600637060
 Transform:
@@ -14941,7 +15002,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &611915404
 Transform:
@@ -15025,7 +15086,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &619704849
 Transform:
@@ -15109,7 +15170,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &620498312
 SpriteRenderer:
@@ -15171,12 +15232,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620498311}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.61, y: -23.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &623758825 stripped
 Transform:
@@ -15264,7 +15325,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &631858936
 Transform:
@@ -15274,7 +15335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631858935}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6166515, y: -46.014275, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -15290,7 +15351,7 @@ Transform:
   - {fileID: 196995322}
   - {fileID: 1332134941}
   - {fileID: 767305616}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &632299606
 PrefabInstance:
@@ -15364,7 +15425,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &635373054
 Transform:
@@ -15505,7 +15566,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &646438679
 Transform:
@@ -15651,7 +15712,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &655617841
 Transform:
@@ -15998,7 +16059,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &678716720
 Transform:
@@ -16082,7 +16143,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &678748262
 Transform:
@@ -16171,7 +16232,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &683519908
 Transform:
@@ -16260,7 +16321,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &694902310
 Transform:
@@ -16344,7 +16405,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &696347343
 Transform:
@@ -16551,7 +16612,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &705776243
 Transform:
@@ -16577,7 +16638,7 @@ Transform:
   - {fileID: 200988344}
   - {fileID: 789412032}
   - {fileID: 655617841}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!4 &712013688 stripped
 Transform:
@@ -16666,7 +16727,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &723017569
 Transform:
@@ -16749,7 +16810,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &727177168
 Transform:
@@ -16779,7 +16840,7 @@ Transform:
   - {fileID: 1738168992}
   - {fileID: 985092314}
   - {fileID: 118251801}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -46.326}
 --- !u!4 &729784046 stripped
 Transform:
@@ -16858,7 +16919,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &735245310
 Transform:
@@ -16941,7 +17002,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &735829122
 Transform:
@@ -16967,7 +17028,7 @@ Transform:
   - {fileID: 2108784311}
   - {fileID: 1946037447}
   - {fileID: 222258541}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!4 &736026398 stripped
 Transform:
@@ -17160,7 +17221,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &739253482
 Transform:
@@ -17301,7 +17362,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &745824540
 Transform:
@@ -17670,7 +17731,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &766310316
 Transform:
@@ -17754,7 +17815,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &766803745
 Transform:
@@ -17838,7 +17899,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &767305616
 Transform:
@@ -18046,7 +18107,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &772929214
 Transform:
@@ -18368,7 +18429,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &784377047
 Transform:
@@ -18452,7 +18513,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &784603226
 Transform:
@@ -18541,7 +18602,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &787988674
 Transform:
@@ -18625,7 +18686,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &789412032
 Transform:
@@ -18833,7 +18894,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &804778344
 Transform:
@@ -19093,7 +19154,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &807406825
 Transform:
@@ -19301,7 +19362,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &819031629
 Transform:
@@ -19447,7 +19508,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &833441890
 Transform:
@@ -20079,7 +20140,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &866899585
 Transform:
@@ -20225,7 +20286,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &872540897
 Transform:
@@ -20824,7 +20885,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &874625303
 Transform:
@@ -20907,7 +20968,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &877176600
 Transform:
@@ -20933,7 +20994,7 @@ Transform:
   - {fileID: 1615956143}
   - {fileID: 646438679}
   - {fileID: 1851549843}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!4 &879672880 stripped
 Transform:
@@ -20960,7 +21021,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &882953497
 Transform:
@@ -21359,7 +21420,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &897817160
 Transform:
@@ -21447,7 +21508,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &898539933
 Transform:
@@ -21477,7 +21538,7 @@ Transform:
   - {fileID: 112728490}
   - {fileID: 522604541}
   - {fileID: 213865079}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.841}
 --- !u!1 &900649242
 GameObject:
@@ -21494,7 +21555,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &900649243
 Transform:
@@ -21712,7 +21773,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &910455412
 Transform:
@@ -22029,7 +22090,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &928805051
 Transform:
@@ -22113,7 +22174,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &929160503
 Transform:
@@ -22197,7 +22258,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &930879008
 SpriteRenderer:
@@ -22259,12 +22320,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930879007}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.48, y: -40.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &930889499 stripped
 Transform:
@@ -22472,7 +22533,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &945714560
 Transform:
@@ -22613,7 +22674,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &948145930
 Transform:
@@ -22697,7 +22758,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &955235495
 SpriteRenderer:
@@ -22759,12 +22820,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955235494}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 8.81717, y: -3.9865236, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &955781560 stripped
 Transform:
@@ -22848,7 +22909,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &970692788
 Transform:
@@ -22994,7 +23055,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &985092314
 Transform:
@@ -23140,7 +23201,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &994491766
 Transform:
@@ -23514,7 +23575,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1015518013
 Transform:
@@ -23598,7 +23659,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1016648487
 Transform:
@@ -23739,7 +23800,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1017662123
 Transform:
@@ -24066,7 +24127,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1028586869
 Transform:
@@ -24212,7 +24273,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1037076371
 Transform:
@@ -24353,7 +24414,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1040850992
 SpriteRenderer:
@@ -24415,12 +24476,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040850991}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.327169, y: -18.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1040938001
 PrefabInstance:
@@ -24613,7 +24674,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1048009650
 Transform:
@@ -24697,7 +24758,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1050440687
 Transform:
@@ -24791,7 +24852,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1051553500
 Transform:
@@ -24875,7 +24936,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1053806709
 Transform:
@@ -25016,7 +25077,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1057742761
 Transform:
@@ -25100,7 +25161,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1058368155
 Transform:
@@ -25241,7 +25302,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1070453604
 Transform:
@@ -25325,7 +25386,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1070821394
 Transform:
@@ -25409,7 +25470,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1070910052
 Transform:
@@ -25607,7 +25668,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1084131979
 Transform:
@@ -26095,7 +26156,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1101305314
 Transform:
@@ -26422,7 +26483,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1112277531
 Transform:
@@ -26511,7 +26572,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1116916258
 Transform:
@@ -26594,7 +26655,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1117211265
 Transform:
@@ -26604,7 +26665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117211264}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6166515, y: -32.74, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -26620,7 +26681,7 @@ Transform:
   - {fileID: 2093302713}
   - {fileID: 833441890}
   - {fileID: 150518524}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1119452309
 PrefabInstance:
@@ -26694,7 +26755,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1125197210
 Transform:
@@ -26778,7 +26839,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1126966577
 Transform:
@@ -26929,7 +26990,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1136381054
 Transform:
@@ -27075,7 +27136,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1150070459
 Transform:
@@ -27283,7 +27344,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1156038273
 Transform:
@@ -27424,7 +27485,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1160167245
 Transform:
@@ -27689,7 +27750,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1172363673
 Transform:
@@ -27773,7 +27834,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1178191337
 Transform:
@@ -27857,7 +27918,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1179071874
 Transform:
@@ -28003,7 +28064,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1185488131
 Transform:
@@ -28144,7 +28205,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1188877672
 Transform:
@@ -28233,7 +28294,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1190845092
 Transform:
@@ -28550,7 +28611,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1211667204
 Transform:
@@ -28701,7 +28762,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1224771442
 Transform:
@@ -28790,7 +28851,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1227467793
 Transform:
@@ -28946,7 +29007,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1233030936
 Transform:
@@ -29030,7 +29091,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1234999533
 Transform:
@@ -29409,7 +29470,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1245048696
 Transform:
@@ -29513,7 +29574,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1258230079
 Transform:
@@ -29659,7 +29720,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1272458737
 Transform:
@@ -29799,7 +29860,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1275028362
 Transform:
@@ -29825,7 +29886,7 @@ Transform:
   - {fileID: 1526170774}
   - {fileID: 2066684981}
   - {fileID: 2139191975}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!1001 &1277122281
 PrefabInstance:
@@ -29966,7 +30027,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1284890621
 Transform:
@@ -30060,7 +30121,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1287822909
 Transform:
@@ -30154,7 +30215,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1297240389
 Transform:
@@ -30553,7 +30614,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1332134941
 Transform:
@@ -30870,7 +30931,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1346248135
 Transform:
@@ -31383,7 +31444,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1379448922
 Transform:
@@ -31481,7 +31542,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1391324896
 Transform:
@@ -31507,7 +31568,7 @@ Transform:
   - {fileID: 2114631481}
   - {fileID: 562891325}
   - {fileID: 1924820489}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!1001 &1392047903
 PrefabInstance:
@@ -31814,7 +31875,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1397541178
 Transform:
@@ -31955,7 +32016,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1403277303
 Transform:
@@ -32483,7 +32544,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1436296624
 Transform:
@@ -32629,7 +32690,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1439098434
 Transform:
@@ -32713,7 +32774,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1441934123
 Transform:
@@ -32911,7 +32972,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1443425168
 Transform:
@@ -33025,7 +33086,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1452144605
 Transform:
@@ -33109,7 +33170,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1452796574
 Transform:
@@ -33260,7 +33321,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1458671680
 Transform:
@@ -33669,7 +33730,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1464206619
 Transform:
@@ -34088,7 +34149,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1504355409
 Transform:
@@ -34316,7 +34377,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1526170774
 Transform:
@@ -34405,7 +34466,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1527031675
 Transform:
@@ -34608,7 +34669,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1541921774
 Transform:
@@ -34692,7 +34753,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1545444235
 Transform:
@@ -34781,7 +34842,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1546211422
 Transform:
@@ -35055,7 +35116,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1567681384
 Transform:
@@ -35081,7 +35142,7 @@ Transform:
   - {fileID: 1963333492}
   - {fileID: 1803423898}
   - {fileID: 1224771442}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!4 &1567935299 stripped
 Transform:
@@ -35403,7 +35464,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1587120159
 Transform:
@@ -35544,7 +35605,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1590464244
 Transform:
@@ -35628,7 +35689,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1590538308
 Transform:
@@ -36002,7 +36063,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1615956143
 Transform:
@@ -36086,7 +36147,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1629800190
 Transform:
@@ -36170,7 +36231,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!212 &1631133834
 SpriteRenderer:
@@ -36232,12 +36293,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631133833}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 12.1, y: 2.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1634237574
 GameObject:
@@ -36254,7 +36315,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1634237575
 Transform:
@@ -36400,7 +36461,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1640689933
 Transform:
@@ -36484,7 +36545,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1644282088
 Transform:
@@ -36682,7 +36743,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1657260404
 Transform:
@@ -36833,7 +36894,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1667142495
 Transform:
@@ -36984,7 +37045,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1672280659
 Transform:
@@ -37244,7 +37305,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1681756228
 Transform:
@@ -37390,7 +37451,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1685349116
 Transform:
@@ -37546,7 +37607,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1707981224
 Transform:
@@ -37640,7 +37701,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1711197836
 Transform:
@@ -37910,7 +37971,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1733332093
 Transform:
@@ -38004,7 +38065,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1738168992
 Transform:
@@ -38144,7 +38205,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1743998101
 Transform:
@@ -38154,7 +38215,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1743998100}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.69, y: 8.07, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38170,7 +38231,7 @@ Transform:
   - {fileID: 1822534613}
   - {fileID: 766310316}
   - {fileID: 1050440687}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1749021264
 PrefabInstance:
@@ -38244,7 +38305,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1750787808
 Transform:
@@ -38384,7 +38445,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1756148155
 Transform:
@@ -38394,7 +38455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756148154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.69, y: -32.764275, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38410,7 +38471,7 @@ Transform:
   - {fileID: 242098430}
   - {fileID: 897817160}
   - {fileID: 1546211422}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1757158625 stripped
 Transform:
@@ -38648,7 +38709,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1789155178
 Transform:
@@ -38866,7 +38927,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1803423898
 Transform:
@@ -38950,7 +39011,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1804504802
 Transform:
@@ -39034,7 +39095,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1805369579
 Transform:
@@ -39237,7 +39298,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1813384423
 Transform:
@@ -39393,7 +39454,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1820899036
 Transform:
@@ -39534,7 +39595,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1822534613
 Transform:
@@ -39732,7 +39793,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1823919900
 Transform:
@@ -39873,7 +39934,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1826092670
 Transform:
@@ -40019,7 +40080,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1833626331
 Transform:
@@ -40108,7 +40169,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1835890247
 Transform:
@@ -40192,7 +40253,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1843101631
 Transform:
@@ -40400,7 +40461,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1851549843
 Transform:
@@ -40603,7 +40664,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1856533670
 Transform:
@@ -41176,7 +41237,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1894608093
 Transform:
@@ -41461,7 +41522,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1919291405
 Transform:
@@ -41545,7 +41606,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1919492412
 Transform:
@@ -41686,7 +41747,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1924820489
 Transform:
@@ -41774,7 +41835,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1926515234
 Transform:
@@ -41784,7 +41845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926515233}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.69, y: -46.014275, z: 0.005845597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -41800,7 +41861,7 @@ Transform:
   - {fileID: 1685349116}
   - {fileID: 1441934123}
   - {fileID: 8144457}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1926703173
 PrefabInstance:
@@ -41874,7 +41935,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1929931368
 Transform:
@@ -42015,7 +42076,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1946037447
 Transform:
@@ -42466,7 +42527,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1963333492
 Transform:
@@ -42802,7 +42863,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1988568595
 Transform:
@@ -42832,7 +42893,7 @@ Transform:
   - {fileID: 1058368155}
   - {fileID: 580198376}
   - {fileID: 123475313}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.841}
 --- !u!4 &1989238071 stripped
 Transform:
@@ -42983,7 +43044,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1999065181
 Transform:
@@ -43191,7 +43252,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2006519399
 Transform:
@@ -43280,7 +43341,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2010835760
 Transform:
@@ -43540,7 +43601,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2027048561
 Transform:
@@ -43840,7 +43901,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2044788455
 Transform:
@@ -43923,7 +43984,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2046549582
 Transform:
@@ -43949,7 +44010,7 @@ Transform:
   - {fileID: 2122585212}
   - {fileID: 1403277303}
   - {fileID: 587745285}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 314851663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.602}
 --- !u!1001 &2049721683
 PrefabInstance:
@@ -44209,7 +44270,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2066684981
 Transform:
@@ -44365,7 +44426,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2075082544
 Transform:
@@ -44511,7 +44572,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2080168330
 Transform:
@@ -44595,7 +44656,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2080571707
 Transform:
@@ -44689,7 +44750,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2083781903
 Transform:
@@ -44949,7 +45010,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2089592295
 Transform:
@@ -45105,7 +45166,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2093302713
 Transform:
@@ -45199,7 +45260,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2098303196
 Transform:
@@ -45407,7 +45468,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2103412585
 Transform:
@@ -45506,7 +45567,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2108352731
 Transform:
@@ -45590,7 +45651,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2108415079
 Transform:
@@ -45674,7 +45735,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2108784311
 Transform:
@@ -45773,7 +45834,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2114631481
 Transform:
@@ -45919,7 +45980,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2117950268
 Transform:
@@ -46070,7 +46131,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2122585212
 Transform:
@@ -46268,7 +46329,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2123995700
 Transform:
@@ -46414,7 +46475,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2126605796
 Transform:
@@ -46498,7 +46559,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2127106372
 Transform:
@@ -46649,7 +46710,7 @@ GameObject:
   m_TagString: ROCK
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2139191975
 Transform:
@@ -46792,33 +46853,4 @@ SceneRoots:
   - {fileID: 1463807134}
   - {fileID: 873358190}
   - {fileID: 1885253769}
-  - {fileID: 303493648}
-  - {fileID: 955235496}
-  - {fileID: 620498313}
-  - {fileID: 339249041}
-  - {fileID: 1631133835}
-  - {fileID: 1040850993}
-  - {fileID: 549295526}
-  - {fileID: 169811123}
-  - {fileID: 930879009}
-  - {fileID: 258812502}
-  - {fileID: 117432071}
-  - {fileID: 877176600}
-  - {fileID: 735829122}
-  - {fileID: 547083065}
-  - {fileID: 1275028362}
-  - {fileID: 1567681384}
-  - {fileID: 429451038}
-  - {fileID: 1391324896}
-  - {fileID: 312410372}
-  - {fileID: 1743998101}
-  - {fileID: 2046549582}
-  - {fileID: 705776243}
-  - {fileID: 1117211265}
-  - {fileID: 1756148155}
-  - {fileID: 1926515234}
-  - {fileID: 631858936}
-  - {fileID: 596549493}
-  - {fileID: 727177168}
-  - {fileID: 898539933}
-  - {fileID: 1988568595}
+  - {fileID: 314851663}

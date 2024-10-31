@@ -73,9 +73,68 @@ public class BoidManager : MonoBehaviour
 
             fleeDirection = Flee(pos);
             seekDirection = Seek(pos, targetPos);
-            separationDirection = Separation(boids[i], pos);
-            alignmentDirection = Alignment(boids[i], pos);
-            cohesionDirection = Cohesion (boids[i], pos);
+
+            int alignmentNON = 0;
+            int cohesionNON = 0;
+
+            separationDirection = Vector2.zero;
+            alignmentDirection = Vector2.zero;
+            cohesionDirection = Vector2.zero;
+
+            foreach(Boid neighborBoid in neighborBoids)
+            {
+                if (boids[i].gameObject != neighborBoid.gameObject)
+                {
+                    Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+                    float distance = Vector2.Distance(pos, neighborPos);
+
+                    if (distance < maxSeparationDistance)
+                    {
+                        // this give a linear falloff to the separation effects
+                        separationDirection += (pos - neighborPos).normalized * (maxSeparationDistance - distance);
+                    }
+
+                    if (distance < maxAlignmentDistance)
+                    {
+                        alignmentNON++;
+                        alignmentDirection += neighborBoid.velocity;
+                    }
+
+                    if (distance < maxCohesionDistance)
+                    {
+                        cohesionDirection += neighborPos;
+                        cohesionNON++;
+                    }
+                }
+            }
+
+            if (separationDirection != Vector2.zero)
+            {
+                separationDirection.Normalize();
+            }
+
+            if (alignmentNON > 0)
+            {
+                alignmentDirection = (alignmentDirection / (float)alignmentNON).normalized;
+            }
+
+            if (cohesionNON > 0)
+            {
+                // gets the average neighbor pos
+                cohesionDirection /= (float)cohesionNON;
+
+                cohesionDirection -= pos;
+
+                if (cohesionDirection != Vector2.zero)
+                {
+                    cohesionDirection = cohesionDirection.normalized;
+                }
+            }
+
+
+            //separationDirection = Separation(boids[i], pos);
+            //alignmentDirection = Alignment(boids[i], pos);
+            //cohesionDirection = Cohesion (boids[i], pos);
 
             boids[i].acceleration = (seekDirection * targetWeight) +
                                 (separationDirection * separationWeight) + 
