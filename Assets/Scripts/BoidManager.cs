@@ -29,6 +29,12 @@ public class BoidManager : MonoBehaviour
     private Boid[] boids;
     private List<Boid> neighborBoids = new List<Boid>();
     QuadTree rockTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
+    Vector2 pos;
+    Vector2 fleeDirection;
+    Vector2 seekDirection;
+    Vector2 separationDirection;
+    Vector2 alignmentDirection;
+    Vector2 cohesionDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -56,15 +62,7 @@ public class BoidManager : MonoBehaviour
             quadTree.Add(boid.gameObject);
         }
 
-        Vector2 pos;
-
-        Vector2 fleeDirection;
-        Vector2 seekDirection;
-        Vector2 separationDirection;
-        Vector2 alignmentDirection;
-        Vector2 cohesionDirection;
-
-        foreach(Boid boid in boids)
+        foreach (Boid boid in boids)
         {
             pos = new Vector2(boid.transform.position.x, boid.transform.position.y);
 
@@ -129,11 +127,6 @@ public class BoidManager : MonoBehaviour
                     cohesionDirection = cohesionDirection.normalized;
                 }
             }
-
-
-            //separationDirection = Separation(boids[i], pos);
-            //alignmentDirection = Alignment(boids[i], pos);
-            //cohesionDirection = Cohesion (boids[i], pos);
 
             boid.acceleration = (seekDirection * targetWeight) +
                                 (separationDirection * separationWeight) +
