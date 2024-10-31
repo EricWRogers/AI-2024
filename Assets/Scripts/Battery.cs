@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEditor;
 
+#if (UNITY_EDITOR)
 [CustomEditor(typeof(Battery))]
 public class BatteryEditor : Editor
 {
@@ -18,6 +19,7 @@ public class BatteryEditor : Editor
         }
     }
 }
+#endif
 public class Battery : MonoBehaviour
 {
     [Range(0.0f, 1.0f)]

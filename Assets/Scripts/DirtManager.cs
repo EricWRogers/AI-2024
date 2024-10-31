@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using TMPro;
 
+#if (UNITY_EDITOR)
 [CustomEditor(typeof(DirtManager))]
 public class DirtManagerEditor : Editor
 {
@@ -27,6 +28,7 @@ public class DirtManagerEditor : Editor
         }
     }
 }
+#endif
 
 public class DirtManager : MonoBehaviour
 {
