@@ -64,9 +64,9 @@ public class BoidManager : MonoBehaviour
         Vector2 alignmentDirection;
         Vector2 cohesionDirection;
 
-        for (int i = 0; i < boids.Count(); i++)
+        foreach(Boid boid in boids)
         {
-            pos = new Vector2(boids[i].transform.position.x, boids[i].transform.position.y);
+            pos = new Vector2(boid.transform.position.x, boid.transform.position.y);
 
             neighborBoids = quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
 
@@ -82,7 +82,7 @@ public class BoidManager : MonoBehaviour
 
             foreach (Boid neighborBoid in neighborBoids)
             {
-                if (boids[i].gameObject != neighborBoid.gameObject)
+                if (boid.gameObject != neighborBoid.gameObject)
                 {
                     Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
                     float distance = Vector2.Distance(pos, neighborPos);
@@ -135,30 +135,30 @@ public class BoidManager : MonoBehaviour
             //alignmentDirection = Alignment(boids[i], pos);
             //cohesionDirection = Cohesion (boids[i], pos);
 
-            boids[i].acceleration = (seekDirection * targetWeight) +
+            boid.acceleration = (seekDirection * targetWeight) +
                                 (separationDirection * separationWeight) +
                                 (alignmentDirection * alignmentWeight) +
                                 (cohesionDirection * cohesionWeight) +
                                 (fleeDirection * fleeWeight);
 
-            boids[i].velocity += boids[i].acceleration * speed * Time.deltaTime;
+            boid.velocity += boid.acceleration * speed * Time.deltaTime;
 
             // make the boid look the direction it is going
-            boids[i].transform.right = new Vector3(boids[i].velocity.x, boids[i].velocity.y, 0.0f).normalized;
+            boid.transform.right = new Vector3(boid.velocity.x, boid.velocity.y, 0.0f).normalized;
 
             // handle max speed
-            boids[i].speed = boids[i].velocity.magnitude;
+            boid.speed = boid.velocity.magnitude;
 
-            if (boids[i].speed > maxSpeed)
+            if (boid.speed > maxSpeed)
             {
-                boids[i].velocity = boids[i].velocity.normalized * maxSpeed;
+                boid.velocity = boid.velocity.normalized * maxSpeed;
             }
 
-            boids[i].velocity *= drag;
+            boid.velocity *= drag;
 
-            pos += boids[i].velocity;
+            pos += boid.velocity;
 
-            boids[i].transform.position = new Vector3(pos.x, pos.y, boids[i].transform.position.z);
+            boid.transform.position = new Vector3(pos.x, pos.y, boid.transform.position.z);
         }
     }
 
