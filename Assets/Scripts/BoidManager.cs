@@ -13,7 +13,6 @@ using UnityEngine.TextCore;
 
 public class BoidManager : MonoBehaviour
 {
-    public List<Transform> rocks;
     public float maxAlignmentDistance = 3.0f;
     public float maxCohesionDistance = 2.0f;
     public float maxSeparationDistance = 0.5f;
@@ -29,16 +28,16 @@ public class BoidManager : MonoBehaviour
 
     private Boid[] boids;
     private List<Boid> neighborBoids = new List<Boid>();
+    QuadTree rockTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
     
     // Start is called before the first frame update
     void Start()
     {
         GameObject[] gos = GameObject.FindGameObjectsWithTag("ROCK");
-        rocks.Clear();
 
         foreach(GameObject go in gos)
         {
-            rocks.Add(go.transform);
+            rockTree.Add(go);
         }
     }
 
@@ -50,7 +49,7 @@ public class BoidManager : MonoBehaviour
 
         boids = GetComponentsInChildren<Boid>();
 
-        QuadTree quadTree= new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
+        QuadTree quadTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
 
         foreach(Boid boid in boids)
         {
@@ -167,9 +166,11 @@ public class BoidManager : MonoBehaviour
     {
         Vector2 flee = Vector2.zero;
 
-        foreach(Transform bomb in rocks)
+        List<GameObject> rocks = rockTree.Find(_agentPos, maxBombDistance);
+
+        foreach(GameObject bomb in rocks)
         {
-            Vector2 bombPos = new Vector2(bomb.position.x, bomb.position.y);
+            Vector2 bombPos = new Vector2(bomb.transform.position.x, bomb.transform.position.y);
             float distance = Vector2.Distance(_agentPos, bombPos);
             if (distance < maxBombDistance)
             {
