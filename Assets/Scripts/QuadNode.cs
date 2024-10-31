@@ -108,6 +108,26 @@ public class QuadNode
             quads[3].Find(_out, _center, _radius);
     }
 
+    public void FindComponent<T>(List<T> _out, Vector2 _center, float _radius)
+    {
+        if (quads == null)
+        {
+            for(int i = 0; i < count; i++)
+                if (Vector2.Distance(_center, (Vector2)gameObjects[i].transform.position) <= _radius)
+                    _out.Add(gameObjects[i].GetComponent<T>());
+            return;
+        }
+
+        if (OverLapQuad(quads[0].quadBounds, _center, _radius))
+            quads[0].FindComponent<T>(_out, _center, _radius);
+        if (OverLapQuad(quads[1].quadBounds, _center, _radius))
+            quads[1].FindComponent<T>(_out, _center, _radius);
+        if (OverLapQuad(quads[2].quadBounds, _center, _radius))
+            quads[2].FindComponent<T>(_out, _center, _radius);
+        if (OverLapQuad(quads[3].quadBounds, _center, _radius))
+            quads[3].FindComponent<T>(_out, _center, _radius);
+    }
+
     // needs second pass
     public bool OverLapQuad(QuadBounds quadBounds, Vector2 circleCenter, float radius)
     {

@@ -33,6 +33,15 @@ public class QuadTree
         return gameObjects;
     }
 
+    public List<T> FindComponent<T>(Vector2 _center, float _radius)
+    {
+        List<T> gameObjects = new List<T>();
+
+        head.FindComponent<T>(gameObjects, _center, _radius);
+
+        return gameObjects;
+    }
+
     public void Remove(GameObject _gameObject)
     {
         if (head.Remove(_gameObject))

@@ -28,7 +28,7 @@ public class BoidManager : MonoBehaviour
     public float maxSpeed = 3.0f;
 
     private Boid[] boids;
-    private Boid[] neighborBoids;
+    private List<Boid> neighborBoids = new List<Boid>();
     
     // Start is called before the first frame update
     void Start()
@@ -69,14 +69,7 @@ public class BoidManager : MonoBehaviour
         {
             pos = new Vector2(boids[i].transform.position.x, boids[i].transform.position.y);
 
-            List<GameObject> boidGO = quadTree.Find(pos, maxAlignmentDistance);
-
-            neighborBoids = new Boid[boidGO.Count()];
-
-            for (int j = 0; j < boidGO.Count(); j++)
-            {
-                neighborBoids[j] = boidGO[j].GetComponent<Boid>();
-            }
+            neighborBoids = quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
 
             fleeDirection = Flee(pos);
             seekDirection = Seek(pos, targetPos);
