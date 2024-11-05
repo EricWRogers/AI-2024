@@ -64,6 +64,7 @@ public class BoidManager : MonoBehaviour
         foreach (Boid boid in boids)
         {
             boid.boids = quadTree.FindComponent<Boid>(boid.position, maxAlignmentDistance);
+            boid.rocks = rockTree.FindVector2(boid.position, maxBombDistance);
         }
 
         Parallel.ForEach(boidList, (boid) =>
@@ -79,7 +80,7 @@ public class BoidManager : MonoBehaviour
 
             //neighborBoids = boid.boids;//quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
 
-            //fleeDirection = Flee(pos);
+            fleeDirection = Flee(pos, boid);
             seekDirection = Seek(pos, targetPos);
 
             int alignmentNON = 0;
@@ -172,19 +173,16 @@ public class BoidManager : MonoBehaviour
         }
     }
 
-    Vector2 Flee(Vector2 _agentPos)
+    Vector2 Flee(Vector2 _agentPos, Boid _boid)
     {
         Vector2 flee = Vector2.zero;
 
-        List<GameObject> rocks = rockTree.Find(_agentPos, maxBombDistance);
-
-        foreach (GameObject bomb in rocks)
-        {
-            Vector2 bombPos = new Vector2(bomb.transform.position.x, bomb.transform.position.y);
-            float distance = Vector2.Distance(_agentPos, bombPos);
+        foreach (Vector2 rock in _boid.rocks)
+        {;
+            float distance = Vector2.Distance(_agentPos, rock);
             if (distance < maxBombDistance)
             {
-                Vector2 direction = _agentPos - bombPos;
+                Vector2 direction = _agentPos - rock;
                 flee += direction;
             }
         }

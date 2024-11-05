@@ -20441,19 +20441,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad99c821759677469f86af16db57bc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocks: []
   maxAlignmentDistance: 3
   maxCohesionDistance: 2
   maxSeparationDistance: 1
-  maxBombDistance: 1.6
-  fleeWeight: 5
+  maxBombDistance: 1.5
+  fleeWeight: 6
   targetWeight: 0.35
-  separationWeight: 1
+  separationWeight: 0.88
   alignmentWeight: 0.4
   cohesionWeight: 0.15
   drag: 0.95
   speed: 2
-  maxSpeed: 3
+  maxSpeed: 0.5
 --- !u!4 &873358190
 Transform:
   m_ObjectHideFlags: 0

@@ -42,6 +42,15 @@ public class QuadTree
         return gameObjects;
     }
 
+    public List<Vector2> FindVector2(Vector2 _center, float _radius)
+    {
+        List<Vector2> positions = new List<Vector2>();
+
+        head.FindVector2(positions, _center, _radius);
+
+        return positions;
+    }
+
     public void Remove(GameObject _gameObject)
     {
         if (head.Remove(_gameObject))

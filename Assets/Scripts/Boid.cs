@@ -10,5 +10,6 @@ public class Boid : MonoBehaviour
     public Vector3 right;
     public Vector3 position;
     public List<Boid> boids;
+    public List<Vector2> rocks;
     public float deltaTime;
 }
