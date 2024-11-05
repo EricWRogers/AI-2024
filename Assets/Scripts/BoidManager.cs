@@ -28,12 +28,7 @@ public class BoidManager : MonoBehaviour
     private Boid[] boids;
     private List<Boid> neighborBoids = new List<Boid>();
     QuadTree rockTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
-    Vector2 pos;
-    Vector2 fleeDirection = Vector2.zero;
-    Vector2 seekDirection;
-    Vector2 separationDirection;
-    Vector2 alignmentDirection;
-    Vector2 cohesionDirection;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -73,10 +68,16 @@ public class BoidManager : MonoBehaviour
 
         Parallel.ForEach(boidList, (boid) =>
         {
-            
+            Vector2 pos;
+            Vector2 fleeDirection = Vector2.zero;
+            Vector2 seekDirection;
+            Vector2 separationDirection;
+            Vector2 alignmentDirection;
+            Vector2 cohesionDirection;
+
             pos = new Vector2(boid.position.x, boid.position.y);
 
-            neighborBoids = boid.boids;//quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
+            //neighborBoids = boid.boids;//quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
 
             //fleeDirection = Flee(pos);
             seekDirection = Seek(pos, targetPos);
@@ -200,11 +201,11 @@ public class BoidManager : MonoBehaviour
         return seek.normalized;
     }
 
-    Vector2 Separation(Boid _boid, Vector2 _agentPos)
+    Vector2 Separation(Boid _boid, Vector2 _agentPos, List<Boid> _neighborBoids)
     {
         Vector2 separation = Vector2.zero;
 
-        foreach (Boid neighborBoid in neighborBoids)
+        foreach (Boid neighborBoid in _neighborBoids)
         {
             if (_boid.position != neighborBoid.position)
             {
@@ -226,12 +227,12 @@ public class BoidManager : MonoBehaviour
         return separation;
     }
 
-    Vector2 Alignment(Boid _boid, Vector2 _agentPos)
+    Vector2 Alignment(Boid _boid, Vector2 _agentPos, List<Boid> _neighborBoids)
     {
         Vector2 alignment = Vector2.zero;
         int numberOfNeighbors = 0;
 
-        foreach (Boid neighborBoid in neighborBoids)
+        foreach (Boid neighborBoid in _neighborBoids)
         {
             if (_boid.position != neighborBoid.position)
             {
@@ -253,12 +254,12 @@ public class BoidManager : MonoBehaviour
         return Vector2.zero;
     }
 
-    Vector2 Cohesion(Boid _boid, Vector2 _agentPos)
+    Vector2 Cohesion(Boid _boid, Vector2 _agentPos, List<Boid> _neighborBoids)
     {
         Vector2 cohesion = Vector2.zero;
         int numberOfNeighbors = 0;
 
-        foreach (Boid neighborBoid in neighborBoids)
+        foreach (Boid neighborBoid in _neighborBoids)
         {
             Vector2 neighborPos = new Vector2(neighborBoid.position.x, neighborBoid.position.y);
             float distance = Vector2.Distance(_agentPos, neighborPos);
