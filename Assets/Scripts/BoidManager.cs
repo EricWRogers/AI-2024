@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.TextCore;
+using System.Threading.Tasks;
 
 // 24fps ~ 200 boids
 // 29fps ~ 200 boids
@@ -30,7 +29,7 @@ public class BoidManager : MonoBehaviour
     private List<Boid> neighborBoids = new List<Boid>();
     QuadTree rockTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
     Vector2 pos;
-    Vector2 fleeDirection;
+    Vector2 fleeDirection = Vector2.zero;
     Vector2 seekDirection;
     Vector2 separationDirection;
     Vector2 alignmentDirection;
@@ -54,21 +53,32 @@ public class BoidManager : MonoBehaviour
         Vector2 targetPos = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         boids = GetComponentsInChildren<Boid>();
+        Boid[] boidList = new Boid[boids.Count()];
+        boids.ToList().CopyTo(boidList);
 
         QuadTree quadTree = new QuadTree(Vector2.zero, 1000.0f, 1000.0f);
 
         foreach (Boid boid in boids)
         {
+            boid.position = boid.transform.position;
+            boid.right = boid.transform.right;
+            boid.deltaTime = Time.deltaTime;
             quadTree.Add(boid.gameObject);
         }
 
         foreach (Boid boid in boids)
         {
-            pos = new Vector2(boid.transform.position.x, boid.transform.position.y);
+            boid.boids = quadTree.FindComponent<Boid>(boid.position, maxAlignmentDistance);
+        }
 
-            neighborBoids = quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
+        Parallel.ForEach(boidList, (boid) =>
+        {
+            
+            pos = new Vector2(boid.position.x, boid.position.y);
 
-            fleeDirection = Flee(pos);
+            neighborBoids = boid.boids;//quadTree.FindComponent<Boid>(pos, maxAlignmentDistance);
+
+            //fleeDirection = Flee(pos);
             seekDirection = Seek(pos, targetPos);
 
             int alignmentNON = 0;
@@ -78,11 +88,11 @@ public class BoidManager : MonoBehaviour
             alignmentDirection = Vector2.zero;
             cohesionDirection = Vector2.zero;
 
-            foreach (Boid neighborBoid in neighborBoids)
+            foreach (Boid neighborBoid in boid.boids)
             {
-                if (boid.gameObject != neighborBoid.gameObject)
+                if (boid.position != neighborBoid.position)
                 {
-                    Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+                    Vector2 neighborPos = new Vector2(neighborBoid.position.x, neighborBoid.position.y);
                     float distance = Vector2.Distance(pos, neighborPos);
 
                     if (distance < maxAlignmentDistance)
@@ -134,10 +144,10 @@ public class BoidManager : MonoBehaviour
                                 (cohesionDirection * cohesionWeight) +
                                 (fleeDirection * fleeWeight);
 
-            boid.velocity += boid.acceleration * speed * Time.deltaTime;
+            boid.velocity += boid.acceleration * speed * boid.deltaTime;
 
             // make the boid look the direction it is going
-            boid.transform.right = new Vector3(boid.velocity.x, boid.velocity.y, 0.0f).normalized;
+            boid.right = new Vector3(boid.velocity.x, boid.velocity.y, 0.0f).normalized;
 
             // handle max speed
             boid.speed = boid.velocity.magnitude;
@@ -151,7 +161,13 @@ public class BoidManager : MonoBehaviour
 
             pos += boid.velocity;
 
-            boid.transform.position = new Vector3(pos.x, pos.y, boid.transform.position.z);
+            boid.position = new Vector3(pos.x, pos.y, boid.position.z);
+        });
+
+        foreach(Boid boid in boids)
+        {
+            boid.transform.right = boid.right;
+            boid.transform.position = boid.position;
         }
     }
 
@@ -190,9 +206,9 @@ public class BoidManager : MonoBehaviour
 
         foreach (Boid neighborBoid in neighborBoids)
         {
-            if (_boid.gameObject != neighborBoid.gameObject)
+            if (_boid.position != neighborBoid.position)
             {
-                Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+                Vector2 neighborPos = new Vector2(neighborBoid.position.x, neighborBoid.position.y);
                 float distance = Vector2.Distance(_agentPos, neighborPos);
                 if (distance < maxSeparationDistance)
                 {
@@ -217,9 +233,9 @@ public class BoidManager : MonoBehaviour
 
         foreach (Boid neighborBoid in neighborBoids)
         {
-            if (_boid.gameObject != neighborBoid.gameObject)
+            if (_boid.position != neighborBoid.position)
             {
-                Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+                Vector2 neighborPos = new Vector2(neighborBoid.position.x, neighborBoid.position.y);
                 float distance = Vector2.Distance(_agentPos, neighborPos);
                 if (distance < maxAlignmentDistance)
                 {
@@ -244,7 +260,7 @@ public class BoidManager : MonoBehaviour
 
         foreach (Boid neighborBoid in neighborBoids)
         {
-            Vector2 neighborPos = new Vector2(neighborBoid.transform.position.x, neighborBoid.transform.position.y);
+            Vector2 neighborPos = new Vector2(neighborBoid.position.x, neighborBoid.position.y);
             float distance = Vector2.Distance(_agentPos, neighborPos);
 
             if (distance < maxCohesionDistance)

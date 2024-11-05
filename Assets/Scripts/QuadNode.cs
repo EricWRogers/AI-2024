@@ -10,7 +10,7 @@ public class QuadNode
 {
     const int MaxGameObjectCount = 10;
     public QuadNode[] quads = null;
-    public GameObject[] gameObjects = new GameObject[MaxGameObjectCount];
+    public QuadDot[] gameObjects = new QuadDot[MaxGameObjectCount];
     public int count = 0;
     public QuadBounds quadBounds = new QuadBounds();
 
@@ -25,7 +25,8 @@ public class QuadNode
     {
         if (count < MaxGameObjectCount && quads == null)
         {
-            gameObjects[count] = _gameObject;
+            gameObjects[count].gameObject = _gameObject;
+            gameObjects[count].position = _gameObject.transform.position;
             count++;
             return;
         }
@@ -66,7 +67,7 @@ public class QuadNode
 
             for (int i = 0; i < count; i++)
             {
-                Add(gameObjects[i]);
+                Add(gameObjects[i].gameObject);
             }
 
             count = 0;
@@ -93,8 +94,8 @@ public class QuadNode
         if (quads == null)
         {
             for(int i = 0; i < count; i++)
-                if (Vector2.Distance(_center, (Vector2)gameObjects[i].transform.position) <= _radius)
-                    _out.Add(gameObjects[i]);
+                if (Vector2.Distance(_center, (Vector2)gameObjects[i].position) <= _radius)
+                    _out.Add(gameObjects[i].gameObject);
             return;
         }
 
@@ -113,8 +114,8 @@ public class QuadNode
         if (quads == null)
         {
             for(int i = 0; i < count; i++)
-                if (Vector2.Distance(_center, (Vector2)gameObjects[i].transform.position) <= _radius)
-                    _out.Add(gameObjects[i].GetComponent<T>());
+                if (Vector2.Distance(_center, (Vector2)gameObjects[i].position) <= _radius)
+                    _out.Add(gameObjects[i].gameObject.GetComponent<T>());
             return;
         }
 
@@ -152,7 +153,7 @@ public class QuadNode
             bool found = false;
             for(; i < count; i++)
             {
-                if (gameObjects[i] == _gameObject)
+                if (gameObjects[i].gameObject == _gameObject)
                 {
                     found = true;
                     i++;
@@ -197,4 +198,10 @@ public class QuadBounds
     public Vector2 center = new Vector2();
     public float width = 0;
     public float height = 0;
+}
+
+public struct QuadDot
+{
+    public GameObject gameObject;
+    public Vector3 position;
 }

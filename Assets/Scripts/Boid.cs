@@ -7,4 +7,8 @@ public class Boid : MonoBehaviour
     public Vector2 velocity;
     public Vector2 acceleration;
     public float speed = 0.0f;
+    public Vector3 right;
+    public Vector3 position;
+    public List<Boid> boids;
+    public float deltaTime;
 }
