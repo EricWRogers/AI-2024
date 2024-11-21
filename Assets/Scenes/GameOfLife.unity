@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 1333781925}
   - component: {fileID: 1333781924}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameOfLife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
