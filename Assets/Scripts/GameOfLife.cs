@@ -8,6 +8,9 @@ public class GameOfLife : MonoBehaviour
     public int rowCount, columnCount;
     public List<List<SpriteRenderer>> spriteRenderers = new List<List<SpriteRenderer>>();
     public bool running = false;
+    [Range(0.0f, 1.0f)]
+    public float delay = 0.5f;
+    float currentDelay = 0.0f;
 
     void Start()
     {
@@ -24,7 +27,7 @@ public class GameOfLife : MonoBehaviour
                 GameOfLifeCell cell = go.GetComponent<GameOfLifeCell>();
                 spriteRenderers[c].Add(sr);
                 // (condition) ? true : false;
-                cell.alive = (Random.Range(0,2) == 0);
+                cell.alive = false;
             }
         }
     }
@@ -32,8 +35,20 @@ public class GameOfLife : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            running = !running;
+        }
+
         if (running)
         {
+            currentDelay -= Time.deltaTime;
+
+            if (currentDelay > 0.0f)
+                return;
+
+            currentDelay = delay;
+
             for (int c = 0; c < columnCount; c++)
             {
                 for (int r = 0; r < rowCount; r++)
@@ -84,7 +99,35 @@ public class GameOfLife : MonoBehaviour
         }
         else
         {
+            if (Input.GetMouseButton(0) || Input.GetMouseButton(1))
+            {
+                Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                float halfSize = 0.5f;
 
+                for (int c = 0; c < columnCount; c++)
+                {
+                    for (int r = 0; r < rowCount; r++)
+                    {
+                        if (worldPosition.x > spriteRenderers[c][r].transform.position.x - halfSize &&
+                            worldPosition.x < spriteRenderers[c][r].transform.position.x + halfSize)
+                        {
+                            if (worldPosition.y > spriteRenderers[c][r].transform.position.y - halfSize &&
+                                worldPosition.y < spriteRenderers[c][r].transform.position.y + halfSize)
+                            {
+                                if (Input.GetMouseButton(0)) // left
+                                {
+                                    spriteRenderers[c][r].GetComponent<GameOfLifeCell>().alive = true;
+                                }
+
+                                if (Input.GetMouseButton(1)) // right
+                                {
+                                    spriteRenderers[c][r].GetComponent<GameOfLifeCell>().alive = false;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
